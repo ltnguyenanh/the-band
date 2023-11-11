@@ -1,0 +1,113 @@
+@media screen and (max-width: 992px) {
+  .header .search {
+    padding: 1rem 1.4rem;
+  }
+
+  .header .icons {
+    padding: 1rem 1.4rem;
+  }
+
+  .nav .nav__link {
+    padding: 1rem 1.4rem;
+  }
+
+  .band .description {
+    width: 100%;
+  }
+
+  .band .band__list {
+    width: 100%;
+  }
+  
+  .tour .tour__schedule {
+    width: 98.5%;
+  }
+
+  .tour .tour__tickets {
+    width: 100%;
+  }
+
+  .tour .tour__tickets-item {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .icons {
+    display: block;
+  }
+
+  #check-nav:checked~.icons #menu-nav {
+    display: none;
+  }
+
+  .header .icons #close-nav {
+    display: none;
+    font-size: 2rem;
+    padding: 0.3rem 0;
+  }
+
+  #check-nav:checked~.icons #close-nav {
+    display: block;
+  }
+
+  .header .search {
+    position: relative;
+    margin-left: calc(100% - 45px);
+  }
+
+  .nav {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bs-black);
+    height: 0;
+    overflow: hidden;
+    transition:  0.3s ease;
+  }
+
+  #check-nav:checked~.nav {
+    height: 16.45rem;
+  }
+
+  .nav .nav__link {
+    font-size: 1.4rem;
+    text-align: center;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .nav .nav__link:hover {
+    background: var(--bs-black);
+  }
+
+  #check-nav:checked~.nav .nav__link {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.15s * var(--i));
+  }
+
+  .band .band__item {
+    margin-top: 1.5rem;
+  }
+
+  .tour .tour__schedule {
+    width: 100%;
+  }
+
+  .tour .tour__tickets-item {
+    padding: 0 5rem;
+  }
+  .tour .tour__tickets-item:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+  .tour .tour__tickets-item:nth-child(3) {
+    margin-top: 1.5rem;
+  }
+
+  .contact .contact__form .input-group {
+    margin-top: 3rem;
+  }
+}

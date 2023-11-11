@@ -1,0 +1,244 @@
+<!-- ECHO is on. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Band</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/pngegg.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <input type="checkbox" id="check-nav">
+
+    <label for="check-nav" class="icons">
+      <i class="fa-solid fa-bars" id="menu-nav"></i>
+      <i class="fa-solid fa-xmark" id="close-nav"></i>
+    </label>
+
+    <nav class="nav">
+      <a href="#" class="nav__link" style="--i: 0">Home</a>
+
+      <a href="#band" class="nav__link" style="--i: 1">Band</a>
+
+      <a href="#tour" class="nav__link" style="--i: 2">Tour</a>
+
+      <a href="#contact" class="nav__link" style="--i: 3">Contact</a>
+    </nav>
+
+    <a href="#" class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+  </header>
+
+  <main class="body">
+    <section class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="img/chicago.jpg" class="d-block w-100" alt="img/chicago.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">Chicago</h5>
+              <p class="fs-4">Thank you. Chicago - A night we won't forget.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/la.jpg" class="d-block w-100" alt="img/la.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">Los Angeles</h5>
+              <p class="fs-4">We had the best time playing at Valice Beach.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/ny.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">New York</h5>
+              <p class="fs-4">The atmosphere in New York is lorem ipsum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="band" class="band">
+      <div class="container">
+        <h2 class="band__title">The Band</h2>
+        <span class="band__sub-title">We love music</span>
+        <p class="description">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ul class="band__list row">
+          <li class="band__item col-md-4 col-sm-12">
+            <p class="name">Name</p>
+            <div class="image">
+              <img src="img/bandmember.jpg" alt="" class="">
+            </div>
+          </li>
+
+          <li class="band__item col-md-4 col-sm-12">
+            <p class="name">Name</p>
+            <div class="image">
+              <img src="img/bandmember.jpg" alt="" class="">
+            </div>
+          </li>
+
+          <li class="band__item col-md-4 col-sm-12">
+            <p class="name">Name</p>
+            <div class="image">
+              <img src="img/bandmember.jpg" alt="" class="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tour" id="tour">
+      <div class="container">
+        <h2 class="tour__title">Tour dates</h2>
+        <span class="tour__sub-title">Remember to book your tickets!</span>
+        <ul class="tour__schedule">
+          <li class="tour__schedule-item border-bottom">
+            September
+            <span class="tour__sold">Sold out</span>
+          </li>
+
+          <li class="tour__schedule-item border-bottom">
+            October
+            <span class="tour__sold">Sold out</span>
+          </li>
+
+          <li class="tour__schedule-item">
+            November
+          </li>
+        </ul>
+
+        <ul class="tour__tickets row">
+          <li class="tour__tickets-item col-md-4 col-sm-12">
+            <div class="img">
+              <img src="img/newyork.jpg" alt="">
+            </div>
+
+            <div class="info">
+              <h3 class="title">New York</h3>
+
+              <span class="date">Fri 27 Nov 2016</span>
+
+              <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            
+              <button type="button" class="btn btn-primary btn-sm">Buy Tickets</button>
+            </div>
+          </li>
+          <li class="tour__tickets-item col-md-4 col-sm-12">
+            <div class="img">
+              <img src="img/paris.jpg" alt="">
+            </div>
+
+            <div class="info">
+              <h3 class="title">Paris</h3>
+
+              <span class="date">Sat 28 Nov 2016</span>
+
+              <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            
+              <button type="button" class="btn btn-primary btn-sm">Buy Tickets</button>
+            </div>
+          </li>
+          <li class="tour__tickets-item col-md-4 col-sm-12">
+            <div class="img">
+              <img src="img/sanfran.jpg" alt="">
+            </div>
+
+            <div class="info">
+              <h3 class="title">San Francisco</h3>
+
+              <span class="date">Sun 29 Nov 2016</span>
+
+              <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            
+              <button type="button" class="btn btn-primary btn-sm">Buy Tickets</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="contact__title">Contact</h2>
+
+        <p class="contact__sub-title">Fan? Drop a note!</p>
+
+        <div class="contact__form row">
+          <div class="col-md-6 col-sm-12">
+            <i class="fa-solid fa-location-dot"></i> Chicago, US
+            <br>
+            <i class="fa-solid fa-phone"></i>  Phone: +00 151515
+            <br>
+            <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
+          </div>
+
+          <div class="col-md-6 col-sm-12">            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Name" aria-label="Name" required>
+              <!-- <span class="input-group-text">@</span> -->
+              <input type="email" class="form-control" placeholder="Mail" aria-label="Mail" required>
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-text">Message</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="maps">
+      <img src="img/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-pinterest-p"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <p>Powered by <a href="#">d nine</a></p>
+  </footer>
+
+
+  <script src="bootstrap.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
